@@ -1,0 +1,30 @@
+let photosSchema = mongoose.Schema({
+  id: Number,
+  url: String
+})
+
+let answerSchema = mongoose.Schema({
+  id: Number,
+  body: String,
+  date: String,
+  answerer_name: String,
+  helpfulness: Number,
+  photos: photosSchema
+})
+
+let questionSchema = mongoose.Schema({
+  question_id: Number,
+  question_body: String,
+  question_date: String,
+  asker_name: String,
+  question_helpfulness: Number,
+  reported: Boolean,
+  answers: answersSchema
+})
+
+
+let dataSchema = mongoose.Schema({
+  product_id: String,
+  results: questionSchema
+})
+

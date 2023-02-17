@@ -1,0 +1,48 @@
+CREATE TABLE produts (
+ product_id INTEGER NOT NULL
+);
+
+
+ALTER TABLE produts ADD CONSTRAINT produts_pkey PRIMARY KEY (product_id);
+
+----------------------------------------------------
+
+
+CREATE TABLE questions (
+ question_id INTEGER NOT NULL,
+ product_id INTEGER NOT NULL,
+ question_body VARCHAR NOT NULL,
+ question_date VARCHAR NOT NULL,
+ asker_name VARCHAR NOT NULL,
+ question_helpfulness INTEGER NOT NULL,
+ reported BOOLEAN NOT NULL
+
+);
+
+
+ALTER TABLE questions ADD CONSTRAINT questions_pkey PRIMARY KEY (question_id);
+
+CREATE TABLE answers (
+ id INTEGER NOT NULL,
+ body VARCHAR NOT NULL,
+ date VARCHAR NOT NULL,
+ answerer_name VARCHAR NOT NULL,
+ helpfulness INTEGER NOT NULL,
+ question_id INTEGER
+);
+
+
+ALTER TABLE answers ADD CONSTRAINT answers_pkey PRIMARY KEY (id);
+
+CREATE TABLE photos (
+ index BIGSERIAL NOT NULL,
+ url VARCHAR NOT NULL,
+ id INTEGER NOT NULL
+);
+
+
+ALTER TABLE photos ADD CONSTRAINT photos_pkey PRIMARY KEY (index);
+
+ALTER TABLE questions ADD CONSTRAINT questions_product_id_fkey FOREIGN KEY (product_id) REFERENCES produts(product_id);
+ALTER TABLE answers ADD CONSTRAINT answers_question_id_fkey FOREIGN KEY (question_id) REFERENCES questions(question_id);
+ALTER TABLE photos ADD CONSTRAINT photos_id_fkey FOREIGN KEY (id) REFERENCES answers(id);
