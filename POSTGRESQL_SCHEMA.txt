@@ -24,20 +24,24 @@ ALTER TABLE questions ADD CONSTRAINT questions_pkey PRIMARY KEY (question_id);
 
 CREATE TABLE answers (
  id INTEGER NOT NULL,
+ question_id INTEGER NOT NULL,
  body VARCHAR NOT NULL,
  date VARCHAR NOT NULL,
  answerer_name VARCHAR NOT NULL,
- helpfulness INTEGER NOT NULL,
- question_id INTEGER
+ answerer_email VARCHAR NOT NULL,
+ REPORTED BOOLEAN NOT NULL,
+ helpfulness INTEGER NOT NULL
+
 );
 
 
 ALTER TABLE answers ADD CONSTRAINT answers_pkey PRIMARY KEY (id);
 
 CREATE TABLE photos (
- index BIGSERIAL NOT NULL,
- url VARCHAR NOT NULL,
- id INTEGER NOT NULL
+ index INTEGER NOT NULL,
+ id INTEGER NOT NULL,
+ url VARCHAR NOT NULL
+
 );
 
 
