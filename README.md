@@ -11,3 +11,9 @@ In order to guarantee optimal performance, I conducted thorough load testing of 
 Furthermore, I implemented rigorous optimizations within the database querying mechanisms, fine-tuning the performance to minimize latency and enhance the overall efficiency of data retrieval operations. These optimizations were meticulously designed to cater to the specific requirements and intricacies of the product data and the anticipated query patterns.
 
 Through meticulous planning, efficient utilization of tools, and systematic optimization measures, I successfully created an API that effortlessly handled high request volumes and reliably supplied the necessary product data for the e-commerce website, ultimately contributing to a seamless user experience and enhanced performance.
+<img width="1440" alt="Screen Shot 2023-05-17 at 2 42 20 PM" src="https://github.com/Atelier-Innovations/QnA/assets/117308724/2b9e0989-25d0-43d1-8481-651556ae695c">
+<img width="1440" alt="Screen Shot 2023-05-17 at 2 43 12 PM" src="https://github.com/Atelier-Innovations/QnA/assets/117308724/fd4db9fe-4e93-419b-9c85-4ed0c2bdbd50">
+<img width="1437" alt="Screen Shot 2023-05-17 at 2 43 34 PM" src="https://github.com/Atelier-Innovations/QnA/assets/117308724/bef6b8c8-ccce-4c1a-a166-b89b5b84bc90">
+<img width="1435" alt="Screen Shot 2023-05-17 at 2 44 00 PM" src="https://github.com/Atelier-Innovations/QnA/assets/117308724/d47563fd-8092-404e-9a7c-7547d8ee7a5f">
+<img width="1436" alt="Screen Shot 2023-05-17 at 2 44 21 PM" src="https://github.com/Atelier-Innovations/QnA/assets/117308724/54de75ca-b397-46b6-a19b-4ba9ac00cc4a">
+
